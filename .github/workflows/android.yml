@@ -36,8 +36,9 @@ jobs:
           java-version: 18
 
       - name: Setup Android SDK
-        uses: android-actions/setup-android@v2
-
+        uses: android-actions/setup-android@main
+        with:
+          cmdline-tools-version: 9477386
       - name: Setup Haxe
         uses: krdlab/setup-haxe@v1.2.0
         with:
